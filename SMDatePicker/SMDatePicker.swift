@@ -148,6 +148,10 @@ import UIKit
             toolbar.backgroundColor = backgroundColor
         }
         
+        if #available(iOS 13.4, *) {
+            picker.preferredDatePickerStyle = .wheels
+        }
+        
         if let pickerBackgroundColor = pickerBackgroundColor {
             picker.backgroundColor = pickerBackgroundColor
         } else {
